@@ -18,5 +18,9 @@
         android:id="@+id/characterDetailFragment"
         android:name="tr.com.mekhti.ricknmorty.view.fragments.CharacterDetailFragment"
         android:label="fragment_character_detail"
-        tools:layout="@layout/fragment_character_detail" />
+        tools:layout="@layout/fragment_character_detail" >
+        <argument
+            android:name="character"
+            app:argType="tr.com.mekhti.ricknmorty.model.RNMCharacter" />
+    </fragment>
 </navigation>

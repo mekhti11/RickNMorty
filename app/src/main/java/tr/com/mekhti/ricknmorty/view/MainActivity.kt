@@ -23,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         viewmodel.getCharacters()
 
         viewmodel.characters.observe(this, {
-            Log.d(TAG, "onCreate: "+ it!!.results[0].name)
+            Log.d(TAG, "onCreate: "+ it?.size)
         })
     }
 
 
+    fun getViewModel() : MainViewModel{
+        return viewmodel
+    }
 }
