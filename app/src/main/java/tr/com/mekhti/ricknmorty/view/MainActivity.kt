@@ -11,7 +11,7 @@ import tr.com.mekhti.ricknmorty.viewmodel.MainViewModel
 class MainActivity : AppCompatActivity() {
 
     private val TAG = "MAINACTIVITY"
-    val viewmodel : MainViewModel by lazy {
+    private val viewmodel : MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
 
